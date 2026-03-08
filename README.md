@@ -152,6 +152,9 @@ python app.py
 - News Dashboard
   https://127.0.0.1:8000/news
 
+- WIFI AND BLUETOOTH LOACTER Dashboard
+  https://127.0.0.1:8000/map-w
+
 ---
 
 ## 🔒 TOR Installation & Setup (Linux)
