@@ -20,11 +20,13 @@ It aggregates ship and flight routes, live coordinates, and geodata into a unifi
 
 > [!TIP]
 > - 🚀 **Visit the Blog (Geo Sentinel Updates & Insights)** [[🌐 Open Blog]](https://haybnz.web.app/blog)
+> - 🚀 **Official Website** [[🌍 Visit Site]](https://haybnz.web.app/)
 > - 🚀 **Official Website** [[🌍 Visit Site]](https://varadaraj.online/)
 
 > [!CAUTION]
 > - 🚨 **Geo Sentinel AI Updates** — Stay updated with the latest **Geo Sentinel AI** releases and announcements. [[📝 Subscribe Here]](https://docs.google.com/forms/d/e/1FAIpQLSe3qBh6r1orih2MkLf5DjdolX0jv5Abct02363lLxpXEute-Q/viewform)
 > - 🎥 **Video Tutorial** — Learn how to use **Geo Sentinel AI**. [[▶️ Watch Video]](https://youtu.be/v4IKzEb03u0)
+> - 🎥 **Video Tutorial** — **Geo Sentinel AI:** Overview of the Platform. [[▶️ Watch Video]](https://www.youtube.com/watch?v=1m71yoIDzQY)
 
 > [!NOTE]
 > - 🔎 **Criminal Search** [[IMG]](https://github.com/h9zdev/GeoSentinel/blob/main/images/Screenshot_20260308_194133.png?raw=true) [[📖 HOW TO USE GUIDE]](7168.md)
