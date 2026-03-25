@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoSentinel - Geospatial Monitoring Platform</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0e1a;
+      color: #e0e6f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: radial-gradient(ellipse at center, #0d1f3c 0%, #0a0e1a 70%);
+    }
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 800px;
+    }
+    .logo {
+      font-size: 3.5rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      background: linear-gradient(135deg, #00d4ff, #0080ff, #00ff9d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+    }
+    .tagline {
+      font-size: 1.1rem;
+      color: #7a9cc0;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(0,212,255,0.2);
+      border-radius: 12px;
+      padding: 20px;
+      text-decoration: none;
+      color: #e0e6f0;
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      background: rgba(0,212,255,0.1);
+      border-color: rgba(0,212,255,0.6);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(0,212,255,0.2);
+    }
+    .card .icon { font-size: 2rem; margin-bottom: 10px; }
+    .card h3 { font-size: 1rem; margin-bottom: 6px; color: #00d4ff; }
+    .card p { font-size: 0.8rem; color: #7a9cc0; }
+    .badge {
+      display: inline-block;
+      background: rgba(0,212,255,0.15);
+      border: 1px solid rgba(0,212,255,0.3);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 0.75rem;
+      color: #00d4ff;
+      margin: 4px;
+    }
+    .badges { margin-bottom: 30px; }
+    footer {
+      margin-top: 40px;
+      color: #3d5a7a;
+      font-size: 0.8rem;
+    }
+    .pulse {
+      display: inline-block;
+      width: 10px; height: 10px;
+      background: #00ff9d;
+      border-radius: 50%;
+      margin-right: 6px;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.4); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">&#127757; GeoSentinel</div>
+    <p class="tagline">
+      <span class="pulse"></span>Real-time geospatial monitoring platform &mdash;
+      tracking ships, flights, satellites and global events.
+    </p>
+    <div class="badges">
+      <span class="badge">&#9992;&#65039; Flight Tracking</span>
+      <span class="badge">&#128674; Vessel Tracking</span>
+      <span class="badge">&#128752;&#65039; Satellite Tracking</span>
+      <span class="badge">&#128250; Live CCTV</span>
+      <span class="badge">&#128260; OSINT</span>
+      <span class="badge">&#129302; GeoSential AI</span>
+    </div>
+    <div class="grid">
+      <a class="card" href="templates/earth.html">
+        <div class="icon">&#127757;</div>
+        <h3>Earth View</h3>
+        <p>Interactive 3D globe with real-time tracking and advanced search</p>
+      </a>
+      <a class="card" href="templates/news.html">
+        <div class="icon">&#128240;</div>
+        <h3>News Dashboard</h3>
+        <p>Live geopolitical news and sentiment analysis feeds</p>
+      </a>
+      <a class="card" href="templates/wifi-search.html">
+        <div class="icon">&#128246;</div>
+        <h3>WiFi &amp; BT Locator</h3>
+        <p>Wireless network and Bluetooth device location mapping</p>
+      </a>
+      <a class="card" href="https://github.com/tangobravoiki/GeoSentinel">
+        <div class="icon">&#128196;</div>
+        <h3>GitHub Repository</h3>
+        <p>Source code, documentation and installation guide</p>
+      </a>
+    </div>
+    <footer>
+      GeoSentinel &copy; 2026 &mdash; Hosted on GitHub Pages
+    </footer>
+  </div>
+</body>
+</html>
