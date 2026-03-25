@@ -22,6 +22,5 @@ pandas
 pyotp==2.9.0
 qrcode==7.4.2
 matplotlib
-gevent==24.2.1
-gevent-websocket==0.10.1
+eventlet
 gunicorn==22.0.0
