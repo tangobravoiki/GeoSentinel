@@ -49,13 +49,13 @@ from requests_oauthlib import OAuth2Session
 import cv2
 import numpy as np
 from PIL import Image, ExifTags
-import rasterio
-from rasterio.windows import Window
+try:     import rasterio except ImportError:     rasterio = None
+# rasterio.windows skipped (not available on Render) Window = None
 
 # --- Third-Party: ML / AI ---
-from ultralytics import YOLO
-import chromadb
-from chromadb.utils import embedding_functions
+try:     from ultralytics import YOLO except ImportError:     YOLO = None
+try:     import chromadb except ImportError:     chromadb = None
+# chromadb.utils skipped embedding_functions = None
 
 # --- Third-Party: Phone / Comms ---
 import phonenumbers
@@ -597,7 +597,7 @@ def get_vessel_path(mmsi):
 
 
 
-from ultralytics import YOLO
+try:     from ultralytics import YOLO except ImportError:     YOLO = None
 
 
 @app.route('/api/geo/news')
@@ -1397,8 +1397,8 @@ HF_MODELS = [
 # ================================================================
 # GEOSENTIAL VECTOR DATABASE (ChromaDB)
 # ================================================================
-import chromadb
-from chromadb.utils import embedding_functions
+try:     import chromadb except ImportError:     chromadb = None
+# chromadb.utils skipped embedding_functions = None
 
 CHROMA_DB_PATH = "./geosent_chroma_db"
 COLLECTION_NAME = "geosent_memory"
