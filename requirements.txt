@@ -24,3 +24,4 @@ qrcode==7.4.2
 matplotlib==3.9.0
 gunicorn
 gevent
+gevent-websocket
