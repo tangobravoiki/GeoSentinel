@@ -22,7 +22,6 @@ pandas==2.2.2
 pyotp==2.9.0
 qrcode==7.4.2
 matplotlib==3.9.0
-sentence-transformers==2.7.0
 gevent==24.2.1
 gevent-websocket==0.10.1
 gunicorn==22.0.0
