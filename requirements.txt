@@ -4,7 +4,7 @@ requests==2.32.3
 feedparser==6.0.11
 numpy==1.26.4
 opencv-python-headless==4.9.0.80
-Pillow==10.3.0
+Pillow
 gTTS==2.5.1
 pysocks==1.7.1
 stem==1.8.2
