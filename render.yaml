@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: geosentinel
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --worker-class gevent -w 1 --timeout 120 -b 0.0.0.0:$PORT app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: SECRET_KEY
+        generateValue: true
+      - key: NEWS_API_KEY
+        value: ""
+      - key: OPENROUTER_API_KEY
+        value: ""
+      - key: AIS_API_KEY
+        value: ""
+      - key: TWITTER_BEARER_TOKEN
+        value: ""
+      - key: WIGLE_API_NAME
+        value: ""
+      - key: WIGLE_API_TOKEN
+        value: ""
+      - key: OLLAMA_BASE_URL
+        value: "http://127.0.0.1:11434"
+      - key: OLLAMA_MODEL
+        value: "phi:latest"
